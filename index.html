@@ -1,69 +1,81 @@
-
 <!DOCTYPE html>
-<!-- CSS Stylesheets with Relative Paths -->
 <html lang="en-us">
+<meta charset="UTF-8">
+<title>Malvika Mathur Portfolio</title>
+
 <head>
-  <meta charset="UTF-8">
-  <title>CSS Stylesheets with Relative Paths</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- This line is money! It points your HTML to the CSS file. -->
-  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- CSS Path -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Avenir" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 </head>
-
 <body>
+<!--navbar -->
+<nav class="topnav">
+    <div class="nav-wrapper">
+        <div>
+            <!-- <img id="bio-image" src="images/malvika.jpg" alt="Malvika"> -->
+        </div>
+        <ul id="nav-mobile" class="center hide-on-med-and-down">
+            <li><a href="https://malvika.github.io/">About Me</a></li>
+            <li><a href="https://malvika.github.io/">Projects</a></li>
+            <li><a href="https://malvika.github.io/">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
-  <header>
-    <h1>Malvika Mathur</h1>
-  </header>
+<!--Divider-->
+<hr>
 
-  <main class="container">
-    <section id="main-bio">
-      <section id="figure">
-        <img id="bio-image" src="images/malvika.jpg" alt="Malvika">
-      </section>
-      <p> Results-driven data scientist with strong analytical and problem-solving skills.
-          Proven record of improving business processes through data driven solutions.
-          Exceptional at multi-tasking while working in a fast paced environment delivering high quality products to clients. 
-          Consistently exceeds goals and company expectations. 
-          Technical skills developed through George Washington University's Data Analytics and Visualization program.
-      </p>
+<!--Image-->
+<div class="row">
+    <div class="col s7 push-s5">
+        <div class="card">
+            <div class="card-image">
+
+                <img id="logo" src="images/M.png" alt="Logo">
+                <!--Main display-->
+                <main id="main-content">
+                    <section class="home-page">
+                        <div class="col s10 offset-s10>
+                                        <div class=" home-page__content ">
+                                            <div class="home-page__title-wrapper ">
+                                                <h4 class="playfair home-page__title "> Enter password for resume below: </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+<!-- Password -->
+<div class="col s8">
+    <form action="" id="loginForm">
+        <p><input type="password" name="password" id="password" placeholder="password" />
+        <p><input type="submit" value="Login" class="button" /></p>
+    </form>
+</div>
 
 
-</p>
-    </section>
 
-    <aside id="contact-info">
-      <h2>Contact Info</h2>
-      <ul>
-        <li><strong>Email:</strong> <a href="#">malvika.mathur@gmail.com</a></li>
-        <li><strong>Projects:</strong>   <a href="https:github.com/malvika" target="_blank">GitHub</a></li>
-        <li><strong>Phone:</strong> <a href="#">703-944-1553</a></li>
+</main>
 
-      </ul>
-    </aside>
-
-    <section>
-    <aside id="technical-skills">
-        <h2>Technical Skills</h2>
-                <li>Python</li>
-                <li>Excel, VBA</li>
-                <li>API</li>
-                <li>HTML/CSS</li>
-                <li>PANDAS interface</li>
-                <li>MySQL</li>
-                <li>Matplotlib</li>
-                <li>Javascript</li>
-                <li>MongoDB</li>
-                <li>Bootstrap</li>
-                <li>D3</li>
-                <li>Tableau</li>
-                <li>Hadoop</li>
-                <li>Machine Learning</li>
-      </aside>
-      </section>
-
-  </main>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js "></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript " src="js/materialize.min.js "></script>
 
 </body>
+
 </html>
