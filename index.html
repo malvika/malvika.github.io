@@ -1,81 +1,154 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<meta charset="UTF-8">
-<title>Malvika Mathur Portfolio</title>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="css/box.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="css/figure.css" media="screen,projection" />
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
 
-<head>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body>
+        <!-- navbar -->
+        <nav>
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="./resume.pdf">resume</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#coursework">coursework</a></li>
+                </ul>
+            </div>
+        </nav>
 
-    <!-- CSS Path -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- page content -->
+        <main class="wrapper">
 
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Avenir" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+            <section id="landing-section">
+                <!-- logo -->
+                <div id="logo-container">
+                    <img id='logo' src="images/logo.png">
+                </div>
+                <!-- bg canvas -->
+                <canvas id="logo-canvas"></canvas>
+                <!-- mouse -->
+        		<div class="mouse hidden-xs" style="opacity: 1;">
+        			<div class="wheel"></div>
+        		</div>
+            </section>
 
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+            <section id="projects" class="section parallax bg1">
+                <div class="row header">Projects</div>
+                <div class="row">
+                    <div class="grid">
+            			<figure class="effect-zoe">
+            				<img src="images/projects/project1.png" />
+            				<figcaption>
+            					<h2>Cannabis <span>Legalization</span></h2>
+            					<p class="icon-links">
+            						<a href="https://github.com/malvika/Effects-of-Cannabis-Legalization"><span class="icon-paper-clip"></span></a>
+            					</p>
+            					<p class="description">Beesopter Copter Beesopter Copter Beesopter Copter perdietubes...Beesopter Copter perdietubes</p>
+            				</figcaption>
+            			</figure>
+            			<figure class="effect-zoe">
+            				<img src="images/projects/project2.png" />
+            				<figcaption>
+            					<h2>License to <span>Kill</span></h2>
+            					<p class="icon-links">
+            						<a href="https://github.com/malvika/Drunk_Driving"><span class="icon-paper-clip"></span></a>
+            					</p>
+            					<p class="description">Analysis of Drinking and Driving in accordance with legislations in states</p>
+            				</figcaption>
+            			</figure>
+            		</div>
+                </div>
+                <div class="row">
+                    <div class="grid">
+            			<figure class="effect-zoe">
+            				<img src="images/projects/project3.png" />
+            				<figcaption>
+            					<h2>Citi Bike <span>Analytics</span></h2>
+            					<p class="icon-links">
+            						<a href="https://github.com/malvika/CitiBike_tableau"><span class="icon-paper-clip"></span></a>
+            					</p>
+            					<p class="description">Tableau Visualizations for CitiBike Analysis</p>
+            				</figcaption>
+            			</figure>
+            			<figure class="effect-zoe">
+            				<img src="images/projects/project4.png" />
+            				<figcaption>
+            					<h2>Belly Button <span>Biodiversity</span></h2>
+            					<p class="icon-links">
+            						<a href="https://github.com/malvika/BellyButtonDiversity"><span class="icon-paper-clip"></span></a>
+            					</p>
+            					<p class="description">Using SQLite to create an interactive JS page</p>
+            				</figcaption>
+            			</figure>
+            		</div>
+                </div>
+            </section>
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-</head>
-<body>
-<!--navbar -->
-<nav class="topnav">
-    <div class="nav-wrapper">
-        <div>
-            <!-- <img id="bio-image" src="images/malvika.jpg" alt="Malvika"> -->
-        </div>
-        <ul id="nav-mobile" class="center hide-on-med-and-down">
-            <li><a href="https://malvika.github.io/">About Me</a></li>
-            <li><a href="https://malvika.github.io/">Projects</a></li>
-            <li><a href="https://malvika.github.io/">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-
-<!--Divider-->
-<hr>
-
-<!--Image-->
-<div class="row">
-    <div class="col s7 push-s5">
-        <div class="card">
-            <div class="card-image">
-
-                <img id="logo" src="images/M.png" alt="Logo">
-                <!--Main display-->
-                <main id="main-content">
-                    <section class="home-page">
-                        <div class="col s10 offset-s10>
-                                        <div class=" home-page__content ">
-                                            <div class="home-page__title-wrapper ">
-                                                <h4 class="playfair home-page__title "> Enter password for resume below: </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
-<!-- Password -->
-<div class="col s8">
-    <form action="" id="loginForm">
-        <p><input type="password" name="password" id="password" placeholder="password" />
-        <p><input type="submit" value="Login" class="button" /></p>
-    </form>
-</div>
-
-
-
-</main>
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js "></script>
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript " src="js/materialize.min.js "></script>
-
-</body>
-
+            <section id="coursework" class="section static">
+                <div class="row header">Coursework</div>
+                <div class="row">
+                    <div class="grid">
+            			<figure class="effect-zoe">
+            				<img src="images/projects/project1.png" />
+            				<figcaption>
+            					<h2>Cannabis <span>Legalization</span></h2>
+            					<p class="icon-links">
+            						<a href="https://github.com/malvika/Effects-of-Cannabis-Legalization"><span class="icon-paper-clip"></span></a>
+            					</p>
+            					<p class="description">Beesopter Copter Beesopter Copter Beesopter Copter perdietubes...Beesopter Copter perdietubes</p>
+            				</figcaption>
+            			</figure>
+            			<figure class="effect-zoe">
+            				<img src="images/projects/project2.png" />
+            				<figcaption>
+            					<h2>License to <span>Kill</span></h2>
+            					<p class="icon-links">
+            						<a href="https://github.com/malvika/Drunk_Driving"><span class="icon-paper-clip"></span></a>
+            					</p>
+            					<p class="description">Analysis of Drinking and Driving in accordance with legislations in states</p>
+            				</figcaption>
+            			</figure>
+            		</div>
+                </div>
+                <div class="row">
+                    <div class="grid">
+            			<figure class="effect-zoe">
+            				<img src="images/projects/project3.png" />
+            				<figcaption>
+            					<h2>Citi Bike <span>Analytics</span></h2>
+            					<p class="icon-links">
+            						<a href="https://github.com/malvika/CitiBike_tableau"><span class="icon-paper-clip"></span></a>
+            					</p>
+            					<p class="description">Tableau Visualizations for CitiBike Analysis</p>
+            				</figcaption>
+            			</figure>
+            			<figure class="effect-zoe">
+            				<img src="images/projects/project4.png" />
+            				<figcaption>
+            					<h2>Belly Button <span>Biodiversity</span></h2>
+            					<p class="icon-links">
+            						<a href="https://github.com/malvika/BellyButtonDiversity"><span class="icon-paper-clip"></span></a>
+            					</p>
+            					<p class="description">Using SQLite to create an interactive JS page</p>
+            				</figcaption>
+            			</figure>
+            		</div>
+                </div>
+            </section>
+        </main>
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/greensock/EasePack.min.js"></script>
+        <script type="text/javascript" src="js/greensock/rAF.js"></script>
+        <script type="text/javascript" src="js/greensock/TweenLite.min.js"></script>
+        <script type="text/javascript" src="js/greensock/index.js"></script>
+    </body>
 </html>

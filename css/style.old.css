@@ -1,0 +1,38 @@
+.landing-section {
+    height: 100vh;
+    color: white;
+    background: #010022;
+    display: flex;
+    align-items: center;
+}
+
+.uk-container div {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: auto;
+    height: 20rem;
+}
+
+#resume-container {
+    margin-top: 7rem;
+}
+
+#resume-btn {
+    border: none;
+    color: #e1e1e1;
+    border-radius: 10px;
+    background: linear-gradient(70deg, #810051, #4a0f97);
+}
+
+#arrow-container {
+    margin-top: 5rem;
+}
+
+.uk-subnav {
+    top: 2rem;
+    right: 2rem;
+    position: fixed;
+}
